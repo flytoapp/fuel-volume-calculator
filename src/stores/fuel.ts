@@ -27,7 +27,7 @@ export const useFuelStore = defineStore(
       'lb',
     ]
 
-    function convertUnits(value, from, to) {
+    function convertUnits(value, from: string, to: string) {
       return convert(parseFloat(value)).from(from).to(to)
     }
 
