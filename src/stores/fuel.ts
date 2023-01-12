@@ -66,7 +66,7 @@ export const useFuelStore = defineStore(
     })
 
     const requiredFuelVolume = computed(() => {
-      return Math.round(convertUnits(baseRequiredFuelVolume.value, 'l', volumeUnits.value))
+      return Math.ceil(convertUnits(baseRequiredFuelVolume.value, 'l', volumeUnits.value))
     })
 
     return {
